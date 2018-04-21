@@ -33,7 +33,7 @@
         height: 100vh;
         justify-content: center;
         margin: 0;
-        padding: 4rem;
+        padding: 4rem 4rem 6rem;
       }
 
       main {
@@ -59,9 +59,30 @@
       }
 
       a {
+        text-decoration: none;
+      }
+
+      p > a {
         border-bottom: 1px dotted #2A3C46;
         color: inherit;
-        text-decoration: none;
+      }
+
+      .social-icons {
+        position: absolute;
+        bottom: .5rem;
+        right: .75rem;
+        color: #172126;
+      }
+
+      .social-icons a {
+        display: inline-block;
+        margin-left: .5rem;
+        opacity: .3;
+        transition: opacity .2s;
+      }
+
+      .social-icons a:hover  {
+        opacity: .5;
       }
     </style>
 
@@ -85,6 +106,15 @@
       <p>
         Web Developer at <a href="https://unboxed.co/">Unboxed</a>. Passionate about photography and keen to climb anything: once born a monkey.
       </p>
+
+      <div class="social-icons">
+        <a href="https://twitter.com/tomsabin">
+          <img height="24" width="24" src="/twitter.svg" alt="Twitter" />
+        </a>
+        <a href="https://github.com/tomsabin">
+          <img height="24" width="24" src="/github.svg" alt="GitHub" />
+        </a>
+      </div>
     </main>
   </body>
 </html>
